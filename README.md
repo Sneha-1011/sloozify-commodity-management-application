@@ -112,7 +112,7 @@
 ## 🏗 Architecture
 
 ### Project Structure
-\`\`\`
+
 sloozify/
 ├── app/
 │   ├── api/
@@ -158,11 +158,10 @@ sloozify/
 ├── tsconfig.json                     # TypeScript configuration
 ├── tailwind.config.js                # Tailwind configuration
 └── README.md                         # This file
-\`\`\`
+
 
 ### Key Components Flow
 
-\`\`\`
 ┌─────────────────────────────────────────────────────────────────┐
 │                      App (Root Layout)                          │
 │                   + Theme Provider                              │
@@ -189,7 +188,6 @@ sloozify/
                         │  + Login/Signup Funcs │
                         │  + Session Storage    │
                         └───────────────────────┘
-\`\`\`
 
 ### Data Flow
 1. **User Registration** → Sign-Up Form → API Route → Database (MySQL/Neon) → Auth Context
@@ -198,7 +196,7 @@ sloozify/
 4. **Product Management** → Product Page → Display Products → Filter/Search → Update UI
 
 ### Authentication Flow
-\`\`\`
+
 User Input (Email/Password)
     ↓
 Validation
@@ -212,7 +210,7 @@ Create Session Token (Base64)
 Store in Cookies
     ↓
 Redirect to Dashboard
-\`\`\`
+
 
 ---
 
