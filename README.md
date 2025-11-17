@@ -564,11 +564,3 @@ For issues, questions, or suggestions:
 - **Email:** snehamuraleedharan3@gmail.com
 
 ---
-
-<div align="center">
-
-### Made with ❤️ for better inventory management
-
-[⬆ Back to top](#-sloozify---smart-inventory-management-system)
-
-</div>
