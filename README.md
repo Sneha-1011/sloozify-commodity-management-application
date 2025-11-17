@@ -153,8 +153,9 @@ sloozify/
 ├── tailwind.config.js
 └── README.md
 
-
+```
 ### Key Components Flow
+```
 
 ┌─────────────────────────────────────────────────────────────────┐
 │                      App (Root Layout)                          │
@@ -182,6 +183,9 @@ sloozify/
                         │  + Login/Signup Funcs │
                         │  + Session Storage    │
                         └───────────────────────┘
+
+```
+---
 
 ### Data Flow
 1. **User Registration** → Sign-Up Form → API Route → Database (MySQL/Neon) → Auth Context
