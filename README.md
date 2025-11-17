@@ -111,53 +111,47 @@
 
 ## 🏗 Architecture
 
-### Project Structure
+## Project Structure
 
+> Compact, readable directory tree — paste this into GitHub README for a clear view.
+
+```text
 sloozify/
 ├── app/
 │   ├── api/
 │   │   └── auth/
-│   │       ├── login/
-│   │       │   └── route.ts          # Login API endpoint
-│   │       └── signup/
-│   │           └── route.ts          # Registration API endpoint
-│   ├── analytics/
-│   │   └── page.tsx                  # Analytics dashboard
-│   ├── dashboard/
-│   │   └── page.tsx                  # Main dashboard
-│   ├── login/
-│   │   └── page.tsx                  # Login page
-│   ├── orders/
-│   │   └── page.tsx                  # Orders tracking page
-│   ├── products/
-│   │   └── page.tsx                  # Products inventory page
-│   ├── signup/
-│   │   └── page.tsx                  # Registration page
-│   ├── globals.css                   # Global styles and animations
-│   ├── layout.tsx                    # Root layout with theme provider
-│   └── page.tsx                      # Home page
+│   │       ├── login/route.ts       # Login API endpoint
+│   │       └── signup/route.ts      # Registration API endpoint
+│   ├── analytics/page.tsx           # Analytics dashboard
+│   ├── dashboard/page.tsx           # Main dashboard
+│   ├── login/page.tsx               # Login page
+│   ├── orders/page.tsx              # Orders tracking page
+│   ├── products/page.tsx            # Products inventory page
+│   ├── signup/page.tsx              # Registration page
+│   ├── globals.css                  # Global styles & animations
+│   ├── layout.tsx                   # Root layout + theme provider
+│   └── page.tsx                     # Home page
 ├── components/
-│   ├── animated-background.tsx       # Background animation component
-│   ├── auth-context.tsx              # Authentication context provider
-│   ├── product-card.tsx              # Product card component
-│   ├── protected-route.tsx           # Route protection wrapper
-│   ├── sidebar.tsx                   # Navigation sidebar
-│   ├── theme-provider.tsx            # Theme provider setup
-│   ├── theme-toggle.tsx              # Dark/Light mode toggle
-│   └── ui/                           # shadcn/ui components
+│   ├── animated-background.tsx      # Background animation
+│   ├── auth-context.tsx             # Auth context/provider
+│   ├── product-card.tsx             # Product card UI
+│   ├── protected-route.tsx          # Route protection wrapper
+│   ├── sidebar.tsx                  # Navigation sidebar
+│   ├── theme-provider.tsx           # Theme provider setup
+│   └── ui/                          # shadcn/ui components
 ├── lib/
-│   ├── auth.ts                       # Authentication logic
-│   ├── db.ts                         # Database abstraction layer
-│   ├── types.ts                      # TypeScript type definitions
-│   └── utils.ts                      # Utility functions
+│   ├── auth.ts                      # Auth logic
+│   ├── db.ts                        # DB abstraction (Neon/MySQL)
+│   ├── types.ts                     # TypeScript types
+│   └── utils.ts                     # Utility helpers
 ├── scripts/
-│   ├── 01-init-database.sql          # Database schema setup
-│   └── run-migration.ts              # Database migration runner
-├── public/                           # Static assets
-├── package.json                      # Dependencies
-├── tsconfig.json                     # TypeScript configuration
-├── tailwind.config.js                # Tailwind configuration
-└── README.md                         # This file
+│   ├── 01-init-database.sql         # DB schema setup
+│   └── run-migration.ts             # Migration runner
+├── public/                          # Static assets
+├── package.json
+├── tsconfig.json
+├── tailwind.config.js
+└── README.md
 
 
 ### Key Components Flow
